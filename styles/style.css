@@ -1,0 +1,10 @@
+/* Główny plik który łączy wszystkie poszczególne części (pliki css) stylowania */
+
+@import "darkMode.css";
+@import "menu.css";
+@import "vars.css";
+@import "mainPage.css";
+@import "index.style.css"
+
+
+

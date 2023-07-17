@@ -1,0 +1,9 @@
+/* plik z stylami, określa jak został ostylowany główny kontent ( prawdopodobnie się jeszcze go podzieli albo zamieni na poprostu to co się wyświetla przy wejściu na stronę) */
+
+#mainPicture {
+    width: 100%;
+    height: 600px;
+    background: url(../images/picture.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
