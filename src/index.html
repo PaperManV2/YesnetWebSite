@@ -18,17 +18,42 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
-    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <include src="./partials/header.html"></include>
-    <include src="./partials/section1.html"></include>
-    <include src="./partials/section2.html"></include>
-    <include src="./partials/section3.html"></include>
-    <include src="./partials/section4.html"></include>
-    <include src="./partials/section5.html"></include>
-    <include src="./partials/section6.html"></include>
-    <include src="./partials/footer.html"></include>
+    <h1>yesNET</h1>
+
+    <svg width="0" height="0">
+      <defs>
+        <clipPath id="moon">
+          <path
+            d="m27.5,25c-6.904,0-12.5-5.596-12.5-12.5,0-5.76,3.897-10.606,9.196-12.055C22.843.155,21.44,0,20,0,8.954,0,0,8.954,0,20s8.954,20,20,20,20-8.954,20-20c0-1.44-.155-2.843-.445-4.196-1.449,5.3-6.296,9.196-12.055,9.196Z"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+    <label class="switch">
+      <span class="switch__icon switch__icon--light">
+        <span class="switch__icon-part switch__icon-part--1"></span>
+        <span class="switch__icon-part switch__icon-part--2"></span>
+        <span class="switch__icon-part switch__icon-part--3"></span>
+        <span class="switch__icon-part switch__icon-part--4"></span>
+        <span class="switch__icon-part switch__icon-part--5"></span>
+        <span class="switch__icon-part switch__icon-part--6"></span>
+        <span class="switch__icon-part switch__icon-part--7"></span>
+        <span class="switch__icon-part switch__icon-part--8"></span>
+        <span class="switch__icon-part switch__icon-part--9"></span>
+      </span>
+      <input class="switch__input" type="checkbox" role="switch" />
+      <span class="switch__icon switch__icon--dark">
+        <span class="switch__icon-part switch__icon-part--1">
+          <span class="switch__icon-part switch__icon-part--1a"></span>
+          <span class="switch__icon-part switch__icon-part--1b"></span>
+        </span>
+      </span>
+      <span class="switch__label">Dark Mode</span>
+    </label>
+
+    <script src="./js/nightMode.js"></script>
   </body>
 </html>
