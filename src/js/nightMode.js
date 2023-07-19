@@ -1,9 +1,7 @@
-const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+function toggleNightMode() {
+  const body = document.body;
+  body.classList.toggle("night-mode");
 
-const detectToggleOnce = (e) => {
-  e.target.classList.add("toggled-once");
-};
-
-checkboxes.forEach((checkbox) => {
-  checkbox.addEventListener("click", detectToggleOnce, { once: true });
-});
+  const nightModeLabel = document.getElementById("nightModeLabel");
+  nightModeLabel.classList.toggle("night-mode");
+}

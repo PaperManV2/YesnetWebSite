@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="20.907618cm"
+   height="11.211677cm"
+   version="1.1"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   viewBox="0 0 5077.9835 2723.0605"
+   id="svg16"
+   sodipodi:docname="the-globe-4790044.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="cm"
+     showgrid="false"
+     inkscape:zoom="0.52245447"
+     inkscape:cx="164.60764"
+     inkscape:cy="658.43058"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Livello_x0020_1" />
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5940">
+      <stop
+         style="stop-color:#216778;stop-opacity:1;"
+         offset="0.49863017"
+         id="stop5936" />
+      <stop
+         style="stop-color:#216778;stop-opacity:0;"
+         offset="1"
+         id="stop5938" />
+    </linearGradient>
+    <style
+       type="text/css"
+       id="style2">  .fil0 {fill:black} .fil2 {fill:#FF0009} .fil1 {fill:#E31E25;fill-rule:nonzero}  </style>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5940"
+       id="linearGradient5942"
+       x1="-23380.973"
+       y1="-2465.2666"
+       x2="-23049.59"
+       y2="-3171.9766"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       gradientTransform="translate(13734.02,4421.0449)" />
+  </defs>
+  <g
+     id="Livello_x0020_1"
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     transform="translate(9131.8848,618.826)">
+    <metadata
+       id="CorelCorpID_0Corel-Layer" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3216.06px;font-family:Blanka;-inkscape-font-specification:'Blanka, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient5942);fill-opacity:1;stroke-width:16.7503"
+       x="-9664.623"
+       y="1988.1584"
+       id="text1793"
+       transform="scale(0.94483702,1.0583836)"><tspan
+         sodipodi:role="line"
+         id="tspan1791"
+         style="fill:url(#linearGradient5942);fill-opacity:1;stroke-width:16.7503"
+         x="-9664.623"
+         y="1988.1584">yes</tspan></text>
+  </g>
+</svg>

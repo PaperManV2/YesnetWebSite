@@ -47,234 +47,72 @@ svg {
 
 @media screen and (width >= 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1600px;
   }
 }
 
 
 
-
-
-:root {
-  --hue: 223;
-  --bg: hsl(var(--hue), 10%, 90%);
-  --fg: hsl(var(--hue), 10%, 10%);
-  --light-sh: hsla(var(--hue), 10%, 95%, .5);
-  --dark-sh: hsla(var(--hue), 10%, 15%, .4);
-  --primary: hsl(var(--hue), 90%, 50%);
-  --primary-t: hsla(var(--hue), 90%, 50%, 0);
-  --trans-dur: .3s;
-  font-size: 40px;
+.header {
+  background-color: #f8f7f7;
+  width: 100%;
+  position: fixed;
 }
 
-body, input {
-  font: 1em / 1.5 sans-serif;
+.header-wrapper {
+  justify-content: space-between;
+  display: flex;
+}
+
+.header-navigation {
+  justify-content: center;
+  margin-top: 10px;
+  display: flex;
+}
+
+.header-list {
+  align-items: center;
+  gap: 40px;
+  display: flex;
+}
+
+.header-logo {
+  display: block;
+  position: relative;
+  bottom: -30px;
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--fg);
-  transition: background-color var(--trans-dur), color var(--trans-dur);
-  height: 100vh;
-  display: flex;
+  color: #000;
+  background-color: #fff;
+  transition: background-color .5s, color .5s;
 }
 
-.switch, .switch__input {
-  -webkit-tap-highlight-color: transparent;
+body.night-mode {
+  color: #fff;
+  background-color: #131313;
 }
 
-.switch {
-  align-items: center;
-  gap: .5em;
-  margin: auto;
-  display: flex;
+input[type="checkbox"] {
+  display: none;
 }
 
-.switch__icon, .switch__icon-part {
-  display: block;
+label {
+  cursor: pointer;
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
 }
 
-.switch__icon {
-  transition: filter var(--trans-dur);
-  width: 1em;
-  height: 1em;
-  position: relative;
+#nightModeLabel svg {
+  fill: #000;
+  width: 24px;
+  height: 24px;
+  transition: fill .5s;
 }
 
-.switch__icon-part {
-  background-color: hsla(var(--hue), 10%, 10%, .3);
-  transition: background-color var(--trans-dur), box-shadow var(--trans-dur);
-  position: absolute;
-}
-
-.switch__icon--light {
-  filter: drop-shadow(0 0 .125em hsla(var(--hue), 90%, 70%, .2));
-}
-
-.switch__icon--light .switch__icon-part {
-  background-color: hsla(var(--hue), 90%, 70%, 1);
-  transform-origin: 50% 0;
-  border-radius: .125em;
-  width: .125em;
-  height: .2em;
-  top: 50%;
-  left: 50%;
-}
-
-.switch__icon--light .switch__icon-part--1 {
-  box-shadow: 0 .0625em .0625em var(--dark-sh) inset, 0 .0625em .0625em var(--light-sh);
-  border-radius: 50%;
-  width: .4em;
-  height: .4em;
-  top: .3em;
-  left: .3em;
-}
-
-.switch__icon--light .switch__icon-part--2 {
-  box-shadow: 0 .0625em .0625em var(--dark-sh) inset, 0 .0625em .0625em var(--light-sh);
-  transform: translateX(-50%)rotate(0)translateY(.3em);
-}
-
-.switch__icon--light .switch__icon-part--3 {
-  box-shadow: .0625em .0625em .0625em var(--dark-sh) inset, .0625em .0625em .0625em var(--light-sh);
-  transform: translateX(-50%)rotate(45deg)translateY(.3em);
-}
-
-.switch__icon--light .switch__icon-part--4 {
-  box-shadow: .0625em 0 .0625em var(--dark-sh) inset, .0625em 0 .0625em var(--light-sh);
-  transform: translateX(-50%)rotate(90deg)translateY(.3em);
-}
-
-.switch__icon--light .switch__icon-part--5 {
-  box-shadow: .0625em -.0625em .0625em var(--dark-sh) inset, .0625em -.0625em .0625em var(--light-sh);
-  transform: translateX(-50%)rotate(135deg)translateY(.3em);
-}
-
-.switch__icon--light .switch__icon-part--6 {
-  box-shadow: 0 -.0625em .0625em var(--dark-sh) inset, 0 -.0625em .0625em var(--light-sh);
-  transform: translateX(-50%)rotate(180deg)translateY(.3em);
-}
-
-.switch__icon--light .switch__icon-part--7 {
-  box-shadow: -.0625em -.0625em .0625em var(--dark-sh) inset, -.0625em -.0625em .0625em var(--light-sh);
-  transform: translateX(-50%)rotate(225deg)translateY(.3em);
-}
-
-.switch__icon--light .switch__icon-part--8 {
-  box-shadow: -.0625em 0 .0625em var(--dark-sh) inset, -.0625em 0 .0625em var(--light-sh);
-  transform: translateX(-50%)rotate(270deg)translateY(.3em);
-}
-
-.switch__icon--light .switch__icon-part--9 {
-  box-shadow: -.0625em .0625em .0625em var(--dark-sh) inset, -.0625em .0625em .0625em var(--light-sh);
-  transform: translateX(-50%)rotate(315deg)translateY(.3em);
-}
-
-.switch__icon--dark {
-  filter: drop-shadow(0 0 .125em hsla(var(--hue), 90%, 70%, 0)) drop-shadow(0 .0625em .0625em var(--light-sh));
-}
-
-.switch__icon--dark .switch__icon-part--1 {
-  clip-path: url("#moon");
-  background-color: #0000;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.switch__icon--dark .switch__icon-part--1a {
-  box-shadow: 0 .0625em .0625em var(--dark-sh) inset;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-}
-
-.switch__icon--dark .switch__icon-part--1b {
-  background-color: #0000;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-}
-
-.switch__icon--dark .switch__icon-part--1b:before {
-  background-color: var(--bg);
-  box-shadow: 0 .0625em .0625em var(--dark-sh), 0 .0625em .0625em var(--light-sh) inset;
-  content: "";
-  transition: background-color var(--trans-dur);
-  border-radius: 50%;
-  width: 62.5%;
-  height: 62.5%;
-  display: block;
-  position: absolute;
-  left: auto;
-  right: 0;
-}
-
-.switch__input {
-  background-color: hsla(var(--hue), 10%, 10%, .1);
-  box-shadow: 0 .0625em .125em var(--dark-sh) inset, 0 .0625em .125em var(--light-sh), 0 0 0 .125em var(--primary-t);
-  transition: box-shadow var(--trans-dur);
-  appearance: none;
-  border-radius: .75em;
-  outline: #0000;
-  width: 2.5em;
-  height: 1.5em;
-  display: block;
-  position: relative;
-}
-
-.switch__input:focus-visible {
-  box-shadow: 0 .0625em .125em var(--dark-sh) inset, 0 .0625em .125em var(--light-sh), 0 0 0 .125em var(--primary);
-}
-
-.switch__input:before {
-  background-color: var(--primary);
-  box-shadow: 0 .0625em .125em hsla(var(--hue), 10%, 10%, .5);
-  content: "";
-  transition: background-color var(--trans-dur), box-shadow var(--trans-dur), transform var(--trans-dur) cubic-bezier(.65, .05, .34, 1);
-  border-radius: 50%;
-  width: 1em;
-  height: 1em;
-  display: block;
-  position: absolute;
-  top: .25em;
-  left: .25em;
-}
-
-.switch__input:checked:before {
-  transform: translateX(1em);
-}
-
-.switch__label {
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  overflow: hidden;
-}
-
-body:has(.switch__input:checked) {
-  --bg: hsl(var(--hue), 10%, 30%);
-  --fg: hsl(var(--hue), 10%, 90%);
-  --light-sh: hsla(var(--hue), 10%, 55%, .5);
-  --dark-sh: hsla(var(--hue), 10%, 15%, .4);
-  --primary: hsl(var(--hue), 90%, 60%);
-}
-
-body:has(.switch__input:checked) .switch__icon--light {
-  filter: drop-shadow(0 0 .125em hsla(var(--hue), 90%, 75%, 0));
-}
-
-body:has(.switch__input:checked) .switch__icon--light .switch__icon-part {
-  background-color: hsla(var(--hue), 10%, 10%, .3);
-}
-
-body:has(.switch__input:checked) .switch__icon--dark {
-  filter: drop-shadow(0 0 .125em hsla(var(--hue), 90%, 75%, .6)) drop-shadow(0 .0625em .0625em var(--light-sh));
-}
-
-body:has(.switch__input:checked) .switch__icon--dark .switch__icon-part--1a {
-  background-color: hsla(var(--hue), 90%, 75%, 1);
+#nightModeLabel.night-mode svg {
+  fill: #fff;
 }
 
 

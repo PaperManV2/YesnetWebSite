@@ -1,0 +1,28 @@
+.header {
+  background-color: #f8f7f7;
+  position: fixed;
+  width: 100%;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-logo {
+  display: block;
+  position: relative;
+  bottom: -30px;
+}
