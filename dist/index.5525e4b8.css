@@ -4,15 +4,40 @@
   padding: 0;
 }
 
-body {
-  color: #000;
-  background-color: #fff;
-  font-family: Ubuntu, sans-serif;
+.color1 {
+  color: #201907;
 }
 
-body.night-mode {
+.color2 {
+  color: #124e07;
+}
+
+.color3 {
+  color: #e26823;
+}
+
+.color4 {
+  color: #f1d174;
+}
+
+.color5 {
+  color: #f8efe9;
+}
+
+body {
+  color: #383d3b;
+  background-color: #f8efe9;
+  font-family: Ubuntu, sans-serif;
+  transition: background-color 1s;
+}
+
+body.nightMode {
   color: #fff;
-  background-color: #000;
+  background-color: #201907;
+}
+
+.disable-transition {
+  transition: none;
 }
 
 img {
@@ -22,6 +47,7 @@ img {
 }
 
 a {
+  color: unset;
   text-decoration: none;
 }
 
@@ -54,65 +80,180 @@ svg {
 
 
 .header {
-  background-color: #f8f7f7;
   width: 100%;
-  position: fixed;
+  padding: 12px 48px;
 }
 
 .header-wrapper {
   justify-content: space-between;
+  align-items: center;
   display: flex;
 }
 
 .header-navigation {
-  justify-content: center;
-  margin-top: 10px;
+  align-items: center;
   display: flex;
 }
 
 .header-list {
   align-items: center;
-  gap: 40px;
+  gap: 8px;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
   display: flex;
+}
+
+.navigation-item {
+  color: #0e556b;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
 }
 
 .header-logo {
   display: block;
   position: relative;
-  bottom: -30px;
 }
 
-body {
-  color: #000;
-  background-color: #fff;
-  transition: background-color .5s, color .5s;
+.header-navigation-container {
+  flex-direction: column-reverse;
+  display: flex;
 }
 
-body.night-mode {
-  color: #fff;
-  background-color: #131313;
+.header-contacts {
+  flex-direction: row-reverse;
+  gap: 24px;
+  display: flex;
+  position: absolute;
+  top: 12px;
+  right: 140px;
 }
 
-input[type="checkbox"] {
-  display: none;
+.color1 {
+  color: #0c2713;
 }
 
-label {
+.color2 {
+  color: #264622;
+}
+
+.color3 {
+  color: #4e7035;
+}
+
+.color4 {
+  color: #86a44b;
+}
+
+.color5 {
+  color: #d2e365;
+}
+
+.toggle-container {
+  border-radius: 50px;
+  width: 52px;
+  height: 30px;
+  position: relative;
+}
+
+.toggle-checkbox {
+  appearance: none;
+  z-index: 1;
+  border-radius: inherit;
+  opacity: 0;
   cursor: pointer;
-  margin: 10px;
-  padding: 5px;
-  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
-#nightModeLabel svg {
-  fill: #000;
-  width: 24px;
-  height: 24px;
-  transition: fill .5s;
+.toggle-track {
+  border-radius: inherit;
+  background-color: #aeaeae;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  transition: background-color .4s linear;
+  display: flex;
+  position: relative;
+  box-shadow: inset 0 1px 2px #0003;
 }
 
-#nightModeLabel.night-mode svg {
-  fill: #fff;
+.toggle-container.night > .toggle-checkbox:checked + .toggle-track {
+  background-color: #046b79;
+}
+
+.toggle-thumb {
+  transform-origin: 0;
+  background-color: #fff;
+  border-radius: 11px;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  box-shadow: 0 4px 4px #0003, inset 0 -2px 4px #0003;
+}
+
+.toggle-checkbox.toggled-once + .toggle-track > .toggle-thumb {
+  animation-name: grow-out, bounce-out;
+  animation-duration: .2s;
+  animation-timing-function: cubic-bezier(.75, 0, 1, 1), cubic-bezier(0, 0, .3, 1.5);
+  animation-delay: 0s, .2s;
+  animation-fill-mode: forwards;
+}
+
+.toggle-checkbox.toggled-once:checked + .toggle-track > .toggle-thumb {
+  animation-name: grow-in, bounce-in;
+}
+
+@keyframes grow-in {
+  0% {
+    border-radius: 11px;
+    transform: translateX(0)scale(1);
+  }
+
+  100% {
+    border-radius: 5.02941px 9.76471px;
+    transform: translateX(8px)scale(1.54545, .727273);
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    border-radius: 5.02941px 9.76471px;
+    transform: translateX(8px)scale(1.54545, .727273);
+  }
+
+  100% {
+    border-radius: 11px;
+    transform: translateX(100%)scale(1);
+  }
+}
+
+@keyframes grow-out {
+  0% {
+    border-radius: 11px;
+    transform: translateX(100%)scale(1);
+  }
+
+  100% {
+    border-radius: 5.02941px 9.76471px;
+    transform: translateX(2px)scale(1.54545, .727273);
+  }
+}
+
+@keyframes bounce-out {
+  0% {
+    border-radius: 5.02941px 9.76471px;
+    transform: translateX(2px)scale(1.54545, .727273);
+  }
+
+  100% {
+    border-radius: 11px;
+    transform: translateX(0)scale(1);
+  }
 }
 
 

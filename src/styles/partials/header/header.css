@@ -1,28 +1,65 @@
 .header {
-  background-color: #f8f7f7;
-  position: fixed;
   width: 100%;
+  padding: 12px 48px 12px 48px;
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-navigation {
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  align-items: center;
 }
 
 .header-list {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  height: 100%;
+}
+.navigation-item {
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+  background-color: lightgray;
+  color: rgb(14, 85, 107);
 }
 
 .header-logo {
   display: block;
   position: relative;
-  bottom: -30px;
+}
+
+.header-navigation-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 24px;
+  position: absolute;
+  top: 12px;
+  right: 140px;
+}
+.color1 {
+  color: #0c2713;
+}
+.color2 {
+  color: #264622;
+}
+.color3 {
+  color: #4e7035;
+}
+.color4 {
+  color: #86a44b;
+}
+.color5 {
+  color: #d2e365;
 }
