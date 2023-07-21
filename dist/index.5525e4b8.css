@@ -256,6 +256,47 @@ svg {
   }
 }
 
+.technology {
+  background: url("ggg.3bc7c742.png") center no-repeat;
+}
+
+.technology-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  display: flex;
+}
+
+.solution {
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-top: 106px;
+  margin-left: 252px;
+  margin-right: 252px;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+}
+
+.order-button {
+  color: #fff;
+  letter-spacing: .06em;
+  cursor: pointer;
+  background: #3ba7ca;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 106px;
+  padding: 10px 41px 10px 42px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  box-shadow: 0 4px 4px #00000026;
+}
+
 
 
 /*# sourceMappingURL=index.5525e4b8.css.map */
