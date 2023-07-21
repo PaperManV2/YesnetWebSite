@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <section id="menu">
-        <a class="logo">logo</a>
-        <a class="btn">Produkty</a>
-        <a class="btn">Mapa Zasięgu</a>
-        <label class="switch">
-          <input id="darkMode" type="checkbox" >
-          <span class="slider round"></span>
-          </label>
+      <a class="logo">logo</a>
+      <a class="btn">Produkty</a>
+      <a class="btn">Mapa Zasięgu</a>
+      <label class="switch">
+        <input id="darkMode" type="checkbox" />
+        <span class="slider round"></span>
+      </label>
     </section>
     <main>
-        <section id="bigSquare">
-            <div class="picture"></div>
-            <div class="aboutContainer">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quis odit dolore nostrum asperiores hic ipsa, placeat dolorum iste autem vitae? Odit perferendis saepe ea vero doloribus. Voluptatem, rerum corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, quod? Tempora inventore consectetur asperiores illo aperiam ex! Voluptatum accusantium corrupti, explicabo molestias sed dolor
-                </p>
-            </div>
-        </section>
-        <section class="littleSquares">
-            <div class="littleSquare"><h1>Sprzedaż i magazyn</h1></div>
-            <div class="littleSquare"><h1>KPiR</h1></div>
-            <div class="littleSquare"><h1>Pełna księgowość</h1></div>
-            <div class="littleSquare"><h1>Kadry i płace</h1></div>
-        </section>
+      <section class="mainSlider">
+        <div class="overlay"></div>
+        <button class="arrow-left">
+          <img src="./images/svg/circle-left.svg" width="80px" />
+        </button>
+        <div class="userForm"></div>
+        <div class="companyForm"></div>
+        <div class="arrow-right">
+          <img src="./images/svg/circle-right.svg" width="80px" />
+        </div>
+      </section>
+      <section id="bigSquare">
+        <div class="picture"></div>
+        <div class="aboutContainer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            quis odit dolore nostrum asperiores hic ipsa, placeat dolorum iste
+            autem vitae? Odit perferendis saepe ea vero doloribus. Voluptatem,
+            rerum corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Perspiciatis, quod? Tempora inventore consectetur asperiores
+            illo aperiam ex! Voluptatum accusantium corrupti, explicabo
+            molestias sed dolor
+          </p>
+        </div>
+      </section>
+      <section class="littleSquares">
+        <div class="littleSquare"><h1>Sprzedaż i magazyn</h1></div>
+        <div class="littleSquare"><h1>KPiR</h1></div>
+        <div class="littleSquare"><h1>Pełna księgowość</h1></div>
+        <div class="littleSquare"><h1>Kadry i płace</h1></div>
+      </section>
     </main>
     <script src="js/index.js" type="module"></script>
-</body>
+  </body>
 </html>
