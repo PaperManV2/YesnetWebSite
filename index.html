@@ -23,15 +23,21 @@
       </label>
     </section>
     <main>
-      <section class="mainSlider">
-        <div class="overlay"></div>
-        <button class="arrow-left">
-          <img src="./images/svg/circle-left.svg" width="80px" />
-        </button>
-        <div class="userForm"></div>
-        <div class="companyForm"></div>
-        <div class="arrow-right">
-          <img src="./images/svg/circle-right.svg" width="80px" />
+      <section class="mainOverlay">
+        <div class="mainSlider">
+          <div class="userForm"></div>
+          <div class="companyForm"></div>
+          <button class="arrow-left">
+            <svg class="btnPrev">
+              <use href="./images/svg/symbol-defs.svg#next-idea"></use>
+            </svg>
+          </button>
+          <button class="arrow-right">
+            <svg class="btnNext">
+              <use href="./images/svg/symbol-defs.svg#next-idea"></use>
+            </svg>
+          </button>
+          <div class="overlay"></div>
         </div>
       </section>
       <section id="bigSquare">

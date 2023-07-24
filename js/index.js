@@ -7,8 +7,9 @@ const body = document.querySelector("body");
 const menu = document.getElementById("menu");
 const bigSquare = document.getElementById("bigSquare");
 const littleSquares = document.querySelectorAll(".littleSquare");
+const mainOverlay = document.querySelector(".mainOverlay");
 
-const objects = [body, menu, bigSquare, littleSquares];
+const objects = [body, menu, bigSquare, littleSquares, mainOverlay];
 
 darkModeSwitch.addEventListener("click", () => {
     changeOnDarkMode(darkModeSwitch, objects);

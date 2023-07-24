@@ -5,6 +5,7 @@
 export function changeOnDarkMode(OnOff, objects) {
     if(OnOff.checked) {
 
+        objects[4].style.backgroundColor = "#cececea2";
         objects[3].forEach(element => {
             console.log(element)
             element.style.backgroundColor = "#7c7c7c"
@@ -15,6 +16,7 @@ export function changeOnDarkMode(OnOff, objects) {
         objects[0].style.backgroundColor = "#2e2d2d";
     } else {
 
+        objects[4].style.backgroundColor = "#000000a2";
         objects[3].forEach(element => {
             console.log(element)
             element.style.backgroundColor = "#dadada"
