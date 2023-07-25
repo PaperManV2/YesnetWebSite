@@ -117,6 +117,14 @@ svg {
   position: relative;
 }
 
+.logo-wholePart {
+  display: flex;
+}
+
+.logo-firstPart {
+  align-items: center;
+}
+
 .header-navigation-container {
   flex-direction: column-reverse;
   display: flex;
@@ -257,7 +265,7 @@ svg {
 }
 
 .technology {
-  background: url("ggg.3bc7c742.png") center no-repeat;
+  background: url("ggg.e390d1a6.png") center no-repeat;
 }
 
 .technology-wrapper {
