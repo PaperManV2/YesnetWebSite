@@ -6,29 +6,14 @@
   padding: 0;
 }
 
-.color1 {
-  color: #201907;
-}
-.color2 {
-  color: #124e07;
-}
-.color3 {
-  color: #e26823;
-}
-.color4 {
-  color: #f1d174;
-}
-.color5 {
-  color: #f8efe9;
-}
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: #f8efe9;
-  color: #383d3b;
-  transition: background-color 1s ease;
+  background-color: white;
+  color: #070922;
+  transition: all 0.5s ease;
 }
 body.nightMode {
-  background-color: #201907;
+  background-color: #140f02;
   color: white;
 }
 

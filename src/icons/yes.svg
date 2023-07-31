@@ -1,85 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
-   width="20.907618cm"
-   height="11.211677cm"
+   width="145.57161mm"
+   height="81.587433mm"
+   viewBox="0 0 145.57161 81.587433"
    version="1.1"
-   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-   viewBox="0 0 5077.9835 2723.0605"
-   id="svg16"
-   sodipodi:docname="the-globe-4790044.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg5"
+   xml:space="preserve"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview18"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="cm"
-     showgrid="false"
-     inkscape:zoom="0.52245447"
-     inkscape:cx="164.60764"
-     inkscape:cy="658.43058"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="Livello_x0020_1" />
-  <defs
-     id="defs4">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient5940">
-      <stop
-         style="stop-color:#216778;stop-opacity:1;"
-         offset="0.49863017"
-         id="stop5936" />
-      <stop
-         style="stop-color:#216778;stop-opacity:0;"
-         offset="1"
-         id="stop5938" />
-    </linearGradient>
-    <style
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs2"><style
        type="text/css"
-       id="style2">  .fil0 {fill:black} .fil2 {fill:#FF0009} .fil1 {fill:#E31E25;fill-rule:nonzero}  </style>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5940"
-       id="linearGradient5942"
-       x1="-23380.973"
-       y1="-2465.2666"
-       x2="-23049.59"
-       y2="-3171.9766"
-       gradientUnits="userSpaceOnUse"
-       spreadMethod="reflect"
-       gradientTransform="translate(13734.02,4421.0449)" />
-  </defs>
-  <g
-     id="Livello_x0020_1"
-     inkscape:label="Livello 1"
-     inkscape:groupmode="layer"
-     transform="translate(9131.8848,618.826)">
-    <metadata
-       id="CorelCorpID_0Corel-Layer" />
-    <text
+       id="style2">  .fil0 {fill:black} .fil2 {fill:#FF0009} .fil1 {fill:#E31E25;fill-rule:nonzero}  </style></defs><g
+     id="layer1"
+     transform="translate(123.08486,468.41551)"><text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3216.06px;font-family:Blanka;-inkscape-font-specification:'Blanka, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient5942);fill-opacity:1;stroke-width:16.7503"
-       x="-9664.623"
-       y="1988.1584"
-       id="text1793"
-       transform="scale(0.94483702,1.0583836)"><tspan
-         sodipodi:role="line"
-         id="tspan1791"
-         style="fill:url(#linearGradient5942);fill-opacity:1;stroke-width:16.7503"
-         x="-9664.623"
-         y="1988.1584">yes</tspan></text>
-  </g>
-</svg>
+       style="font-size:50.8px;font-family:Blanka;-inkscape-font-specification:'Blanka, Normal';white-space:pre;inline-size:484.797;fill:#216778;stroke-width:0.264583"
+       x="-109.99999"
+       y="-68.129028"
+       id="text371"
+       transform="matrix(2.2510474,0,0,2.3009338,121.44281,-254.4972)"><tspan
+         x="-109.99999"
+         y="-68.129028"
+         id="tspan4999"><tspan
+           style="font-family:'Ink Free';-inkscape-font-specification:'Ink Free, Normal'"
+           id="tspan4997">yes</tspan></tspan></text></g></svg>

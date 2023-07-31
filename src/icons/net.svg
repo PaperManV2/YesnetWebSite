@@ -1,85 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
-   width="20.992638cm"
-   height="11.153958cm"
+   width="168.86345mm"
+   height="90.073883mm"
+   viewBox="0 0 168.86345 90.073883"
    version="1.1"
-   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-   viewBox="0 0 5098.6329 2709.0421"
-   id="svg16"
-   sodipodi:docname="the-globe-4790044.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg5"
+   xml:space="preserve"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview18"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="cm"
-     showgrid="false"
-     inkscape:zoom="0.52245447"
-     inkscape:cx="164.60764"
-     inkscape:cy="658.43058"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="Livello_x0020_1" />
-  <defs
-     id="defs4">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient4096">
-      <stop
-         style="stop-color:#216778;stop-opacity:1;"
-         offset="0.50136983"
-         id="stop4092" />
-      <stop
-         style="stop-color:#216778;stop-opacity:0;"
-         offset="1"
-         id="stop4094" />
-    </linearGradient>
-    <style
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs2"><style
        type="text/css"
-       id="style2">  .fil0 {fill:black} .fil2 {fill:#FF0009} .fil1 {fill:#E31E25;fill-rule:nonzero}  </style>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4096"
-       id="linearGradient4098"
-       x1="-11167.807"
-       y1="-2167.2556"
-       x2="-11462.666"
-       y2="-2873.2559"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(6855.4854,-410.4651)"
-       spreadMethod="reflect" />
-  </defs>
-  <g
-     id="Livello_x0020_1"
-     inkscape:label="Livello 1"
-     inkscape:groupmode="layer"
-     transform="translate(9129.4571,5435.0211)">
-    <metadata
-       id="CorelCorpID_0Corel-Layer" />
-    <text
+       id="style2">  .fil0 {fill:black} .fil2 {fill:#FF0009} .fil1 {fill:#E31E25;fill-rule:nonzero}  </style></defs><g
+     id="layer1"
+     transform="translate(-51.199323,470.14253)"><text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3196.29px;font-family:Blanka;-inkscape-font-specification:'Blanka, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient4098);fill-opacity:1;stroke-width:16.6473"
-       x="-9672.1807"
-       y="-2573.0188"
-       id="text1797"
-       transform="scale(0.94388803,1.0594477)"><tspan
-         sodipodi:role="line"
-         id="tspan1795"
-         style="fill:url(#linearGradient4098);fill-opacity:1;stroke-width:16.6473"
-         x="-9672.1807"
-         y="-2573.0188">net</tspan></text>
-  </g>
-</svg>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:'Ink Free';-inkscape-font-specification:'Ink Free, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:488.239;fill:#216778;stroke-width:0.264583"
+       x="-124.19355"
+       y="48.967743"
+       id="text425"
+       transform="matrix(1.9669115,0,0,2.2163852,295.47667,-488.60001)"><tspan
+         x="-124.19355"
+         y="48.967743"
+         id="tspan5213"><tspan
+           style="font-family:Blanka;-inkscape-font-specification:'Blanka, Normal'"
+           id="tspan5211">NET</tspan></tspan></text></g></svg>
