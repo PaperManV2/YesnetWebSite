@@ -1,12 +1,17 @@
 .header {
   width: 100%;
-  padding: 12px 48px 12px 48px;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgb(26, 25, 16, 0.3);
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 12px;
 }
 
 .header-navigation {
@@ -96,7 +101,3 @@
 .header-contacts span {
   margin-left: 12px;
 }
-.header-contacts:hover a {
-  filter: invert(60%) sepia(100%) saturate(10000%) hue-rotate(180deg); /* Przykładowe efekty, dostosuj do swoich preferencji */
-}
-/* próby animacji */
