@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/style.css') }}"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,12 +18,18 @@
   <body>
     <section id="menu">
       <a class="logo">logo</a>
-      <a class="btn">Produkty</a>
-      <a class="btn">Mapa Zasięgu</a>
-      <label class="switch">
-        <input id="darkMode" type="checkbox" />
-        <span class="slider round"></span>
-      </label>
+      <a class="btn" onclick="localStorage.clear()">Produkty</a>
+      <a class="btn map">Mapa Zasięgu</a>
+      <div class="options">
+        <label class="switch">
+          <input id="darkMode" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <div class="loginOption">
+          <a class="btn login">User</a>
+          <p class="loginName"></p>
+        </div>
+      </div>
     </section>
     <main>
       <section class="mainOverlay">
@@ -29,15 +38,18 @@
           <div class="companyForm"></div>
           <button class="arrow-left">
             <svg class="btnPrev">
-              <use href="./images/svg/symbol-defs.svg#next-idea"></use>
+              <use
+                href="{{ url_for('static', filename='/images/svg/symbol-defs.svg') }}#previous-idea"
+              ></use>
             </svg>
           </button>
           <button class="arrow-right">
             <svg class="btnNext">
-              <use href="./images/svg/symbol-defs.svg#next-idea"></use>
+              <use
+                href="{{ url_for('static', filename='/images/svg/symbol-defs.svg') }}#next-idea"
+              ></use>
             </svg>
           </button>
-          <div class="overlay"></div>
         </div>
       </section>
       <section id="bigSquare">
@@ -61,6 +73,41 @@
         <div class="littleSquare"><h1>Kadry i płace</h1></div>
       </section>
     </main>
-    <script src="js/index.js" type="module"></script>
+    <section class="hidden loginOverlay">
+      <form name="loginForm" class="loginForm">
+        <svg width="30" height="30" class="exitLoginForm">
+          <use
+            href="{{ url_for('static', filename='/images/svg/symbol-defs.svg') }}#exit"
+          ></use>
+        </svg>
+        <h2>Sign in</h2>
+        <label form="loginForm">
+          <input
+            name="username"
+            type="text"
+            placeholder="Username"
+            class="username loginFormInput"
+          />
+        </label>
+        <label form="loginForm">
+          <input
+            name="password"
+            type="password"
+            placeholder="Password"
+            class="password loginFormInput"
+          />
+        </label>
+        <input
+          id="submitLogin"
+          type="submit"
+          value="Login"
+          class="loginFormInput"
+        />
+      </form>
+    </section>
+    <script
+      src="{{ url_for('static', filename='js/index.js') }}"
+      type="module"
+    ></script>
   </body>
 </html>
