@@ -9,11 +9,11 @@
 body {
   font-family: "Ubuntu", sans-serif;
   background-color: white;
-  color: #070922;
+  color: #0b111a;
   transition: all 0.5s ease;
 }
 body.nightMode {
-  background-color: #140f02;
+  background-color: #23293b;
   color: white;
 }
 

@@ -1,8 +1,8 @@
 .toggle-container {
   position: relative;
   border-radius: 50px;
-  width: 52px;
-  height: 30px;
+  width: 42px;
+  height: 24px;
 }
 
 .toggle-checkbox {
@@ -31,16 +31,16 @@
 }
 
 .toggle-container.night > .toggle-checkbox:checked + .toggle-track {
-  background-color: #046b79;
+  background-color: #f4a844;
 }
 
 .toggle-thumb {
   position: relative;
   border-radius: 11px;
   transform-origin: left;
-  width: 22px;
-  height: 22px;
-  background-color: #fff;
+  width: 17px;
+  height: 17px;
+  background-color: #23293b;
   box-shadow: 0 4px 4px rgb(0 0 0 / 0.2), inset 0 -2px 4px rgb(0 0 0 / 0.2);
 }
 
