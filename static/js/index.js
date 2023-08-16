@@ -4,6 +4,8 @@ import { changeOnDarkMode } from "./darkMode.js";
 import { loginBtn } from "./login.js";
 import { exitLoginForm } from "./login.js";
 import { login } from "./login.js";
+import { slideToLeft, slideToRight } from "./slider.js";
+
 
 const darkModeSwitch = document.getElementById("darkMode");
 const body = document.querySelector("body");
@@ -17,16 +19,13 @@ const loginModalToogle = document.querySelector(".login");
 const loginFormExit = document.querySelector(".exitLoginForm");
 const signIn = document.getElementById("submitLogin");
 const username = document.querySelector(".loginName");
-const logo = document.querySelector(".logo");
-
-logo.addEventListener("click", () => {
-    let string = username.textContent
-    string = string.slice(0, -3);
-    string += "...";
-    username.textContent = string
-})
+const slideBtnLeft = document.querySelector(".arrow-left");
+const slideBtnRight = document.querySelector(".arrow-right");
+const userFormImg = document.querySelector(".userForm");
+const companyFormImg = document.querySelector(".companyForm");
 
 const objects = [body, menu, bigSquare, littleSquares, mainOverlay, loginFormContainer];
+const sliderImages = [userFormImg, companyFormImg];
 
 darkModeSwitch.addEventListener("click", () => {
     changeOnDarkMode(darkModeSwitch, objects);
@@ -48,4 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
             username.textContent = string
         }
     }
+})
+
+slideBtnRight.addEventListener("click", () => {
+    slideToLeft(sliderImages);
+})
+
+slideBtnLeft.addEventListener("click", () => {
+    slideToRight(sliderImages);
 })

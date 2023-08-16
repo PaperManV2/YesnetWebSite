@@ -25,7 +25,10 @@
   background: url("../images/geometric-1732847.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: absolute;
+  transition: transform 0.5s;
+  z-index: 1;
 }
 
 .companyForm {
@@ -36,8 +39,11 @@
   background: url("../images/business-5475661.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: absolute;
-  background-position: 0% 27%;
+  transition: transform 0.5s;
+  z-index: 2;
+  animation: animate 0.5s;
 }
 
 .arrow-right {
@@ -53,7 +59,7 @@
   background-color: rgba(117, 117, 117, 0.425);
   position: absolute;
   top: calc(50% - 40px);
-  z-index: 2;
+  z-index: 5;
   border: none;
   padding: 0;
   transition: 0.4s;
@@ -86,4 +92,19 @@
   height: 100%;
   position: absolute;
   opacity: 0.5;
+}
+
+.slideToLeft {
+  transform: translateX(-100%);
+}
+
+.slideToRight {
+  transform: translateX(100%);
+}
+
+@keyframes animate {
+  100% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
 }
