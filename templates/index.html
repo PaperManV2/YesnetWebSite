@@ -27,6 +27,15 @@
         </label>
         <div class="loginOption">
           <a class="btn login">User</a>
+          <div class="userMenu hidden">
+            <div class="point"></div>
+            <ul>
+              <li>konto</li>
+              <li>opcja 2</li>
+              <li>opcja 3</li>
+            </ul>
+            <button class="logout">wyloguj</button>
+          </div>
           <p class="loginName"></p>
         </div>
       </div>
@@ -34,16 +43,20 @@
     <main>
       <section class="mainOverlay">
         <div class="mainSlider">
-          <div class="userForm"></div>
-          <div class="companyForm"></div>
-          <button class="arrow-left">
+          <div class="userForm posters">
+            <button class="formToggle">Formularz Zgłoszeniowy</button>
+          </div>
+          <div class="companyForm posters">
+            <button class="formToggle">Formularz Zgłoszeniowy</button>
+          </div>
+          <button class="sliderBtn arrow-left">
             <svg class="btnPrev">
               <use
                 href="{{ url_for('static', filename='/images/svg/symbol-defs.svg') }}#previous-idea"
               ></use>
             </svg>
           </button>
-          <button class="arrow-right">
+          <button class="sliderBtn arrow-right">
             <svg class="btnNext">
               <use
                 href="{{ url_for('static', filename='/images/svg/symbol-defs.svg') }}#next-idea"
@@ -103,6 +116,11 @@
           value="Login"
           class="loginFormInput"
         />
+      </form>
+    </section>
+    <section class="serviceOverlay">
+      <form name="service" class="serviceForm">
+        <label for="service"></label>
       </form>
     </section>
     <script

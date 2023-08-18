@@ -21,19 +21,27 @@ const signIn = document.getElementById("submitLogin");
 const username = document.querySelector(".loginName");
 const slideBtnLeft = document.querySelector(".arrow-left");
 const slideBtnRight = document.querySelector(".arrow-right");
-const userFormImg = document.querySelector(".userForm");
-const companyFormImg = document.querySelector(".companyForm");
+const userMenu = document.querySelector(".userMenu");
+const logoutBtn = document.querySelector(".logout");
 
 const objects = [body, menu, bigSquare, littleSquares, mainOverlay, loginFormContainer];
-const sliderImages = [userFormImg, companyFormImg];
+const sliderImages = document.querySelectorAll(".posters");
 
 darkModeSwitch.addEventListener("click", () => {
     changeOnDarkMode(darkModeSwitch, objects);
 });
 
-loginBtn(loginModalToogle, loginModal);
+loginBtn(loginModalToogle, loginModal, userMenu);
+
 exitLoginForm(loginFormExit, loginModal);
+
 login(signIn, loginFormContainer);
+
+logoutBtn.addEventListener("click", () => {
+    localStorage.removeItem("login");
+    window.location.replace("/")
+})
+
 document.addEventListener("DOMContentLoaded", () => {
     if(localStorage.getItem("login")) {
         username.textContent = JSON.parse(localStorage.getItem("login")).username;
@@ -51,8 +59,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 slideBtnRight.addEventListener("click", () => {
     slideToLeft(sliderImages);
+    slideBtnRight.setAttribute("disabled", "");
+    setTimeout(() => {
+        slideBtnRight.removeAttribute("disabled");
+    }, 700)
+    
 })
 
 slideBtnLeft.addEventListener("click", () => {
     slideToRight(sliderImages);
+    slideBtnLeft.setAttribute("disabled", "");
+    setTimeout(() => {
+        slideBtnLeft.removeAttribute("disabled");
+    }, 500)
 })
+

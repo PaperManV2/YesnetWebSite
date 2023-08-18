@@ -2,6 +2,7 @@
 
 #menu {
   width: calc(100% - 40px);
+  max-width: 1863px;
   height: 70px;
   margin: 0 20px 0 20px;
   background-color: rgb(35, 84, 156);

@@ -1,4 +1,4 @@
-name: "Jonasz", pass: password
+{name: "Jonasz", pass: password}
 {name: "Juliusz", pass: password}
 {name: "Milena", pass: password}
 {name: "Sylwia", pass: password}
