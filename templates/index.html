@@ -118,9 +118,26 @@
         />
       </form>
     </section>
-    <section class="serviceOverlay">
+    <section class="serviceOverlay hidden">
       <form name="service" class="serviceForm">
-        <label for="service"></label>
+        <svg width="30" height="30" class="serviceFormExit">
+          <use
+            href="{{ url_for('static', filename='/images/svg/symbol-defs.svg') }}#exit"
+          ></use>
+        </svg>
+        <label for="service" class="serviceFormName">
+          <input type="text" placeholder="Name" />
+        </label>
+        <label for="service" class="serviceFormEmail">
+          <div class="EmailTelBtnsContainer">
+            <span class="EmailTelBtn">tel</span>
+            <span class="EmailTelBtn">email</span>
+          </div>
+          <input type="email" placeholder="E-mail" class="changableInput" />
+        </label>
+        <label for="service">
+          <textarea placeholder="Message"></textarea>
+        </label>
       </form>
     </section>
     <script

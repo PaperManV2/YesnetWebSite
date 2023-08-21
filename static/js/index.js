@@ -4,7 +4,8 @@ import { changeOnDarkMode } from "./darkMode.js";
 import { loginBtn } from "./login.js";
 import { exitLoginForm } from "./login.js";
 import { login } from "./login.js";
-import { slideToLeft, slideToRight } from "./slider.js";
+import { slideToLeft, slideToRight, TelOrMail, toggleServiceForm } from "./slider.js";
+
 
 
 const darkModeSwitch = document.getElementById("darkMode");
@@ -23,13 +24,22 @@ const slideBtnLeft = document.querySelector(".arrow-left");
 const slideBtnRight = document.querySelector(".arrow-right");
 const userMenu = document.querySelector(".userMenu");
 const logoutBtn = document.querySelector(".logout");
+const serviceContact = document.querySelector(".changableInput");
+const serviceFormExit = document.querySelector(".serviceFormExit");
+const serviceForm = document.querySelector(".serviceOverlay");
 
 const objects = [body, menu, bigSquare, littleSquares, mainOverlay, loginFormContainer];
 const sliderImages = document.querySelectorAll(".posters");
+const EmailTelBtns = document.querySelectorAll(".EmailTelBtn");
+const serviceFormDisplay = document.querySelectorAll(".formToggle")
 
 darkModeSwitch.addEventListener("click", () => {
     changeOnDarkMode(darkModeSwitch, objects);
 });
+
+TelOrMail(EmailTelBtns, serviceContact);
+
+toggleServiceForm(serviceFormExit, serviceForm, serviceFormDisplay)
 
 loginBtn(loginModalToogle, loginModal, userMenu);
 

@@ -181,4 +181,81 @@
   height: 500px;
   background-color: #cacaca;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.serviceForm input {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 19px;
+  border: unset;
+  width: 400px;
+  font-family: "Lato", sans-serif;
+}
+
+.serviceForm input:focus-visible {
+  outline: unset;
+}
+
+.serviceForm textarea:focus-visible {
+  outline: unset;
+}
+
+.serviceForm textarea {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 19px;
+  border: unset;
+  width: 400px;
+  height: 250px;
+  font-family: "Lato", sans-serif;
+}
+
+.EmailTelBtnsContainer {
+  background-color: rgb(35, 84, 156);
+  padding: 5px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 25px;
+}
+
+.EmailTelBtnsContainer span {
+  background-color: #cacaca;
+  padding: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.EmailTelBtnsContainer span:nth-child(2) {
+  box-shadow: inset 0px 0px 6px 1px rgba(0, 0, 0, 0.8);
+}
+
+.EmailTelBtnsContainer span:nth-child(1) {
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.8);
+}
+
+.serviceFormEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.serviceFormExit {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  transition: 0.3s;
+}
+
+.serviceFormExit:hover {
+  fill: rgba(117, 117, 117, 0.425);
+  scale: 0.9;
+  cursor: pointer;
 }

@@ -46,6 +46,34 @@ export function slideToRight(images) {
     }, 500)
 }
 
-export function wanish(images) {
+export function TelOrMail(btns, input ) {
+    const tel = btns[0];
+    const mail = btns[1];
 
+    tel.addEventListener("click", () => {
+        tel.style.boxShadow = "inset 0px 0px 6px 1px rgba(0, 0, 0, 0.8)";
+        mail.style.boxShadow = "2px 2px 6px 0px rgba(0, 0, 0, 0.8)";
+        input.setAttribute("type", "tel");
+        input.setAttribute("placeholder", "Phone");
+    });
+    mail.addEventListener("click", () => {
+        mail.style.boxShadow = "inset 0px 0px 6px 1px rgba(0, 0, 0, 0.8)";
+        tel.style.boxShadow = "2px 2px 6px 0px rgba(0, 0, 0, 0.8)";
+        input.setAttribute("type", "email");
+        input.setAttribute("placeholder", "E-mail");
+    });
+}
+
+export function toggleServiceForm( exitBtn, form, displayBtns ) {
+    exitBtn.addEventListener("click", () => {
+        form.classList.add("hidden");
+    })
+
+    displayBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            form.classList.remove("hidden");
+        })
+    });
+
+    
 }
