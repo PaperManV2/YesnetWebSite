@@ -249,8 +249,8 @@
 
 .serviceFormExit {
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 10px;
+  top: 10px;
   transition: 0.3s;
 }
 

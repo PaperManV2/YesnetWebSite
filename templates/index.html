@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Lato:wght@700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -84,6 +84,87 @@
         <div class="littleSquare"><h1>KPiR</h1></div>
         <div class="littleSquare"><h1>Pełna księgowość</h1></div>
         <div class="littleSquare"><h1>Kadry i płace</h1></div>
+      </section>
+
+      <section class="opinionSection">
+        <section class="opinionsContainer">
+          <div class="opinion">
+            <h2 class="opinionTitle">Uważni</h2>
+            <svg width="110" height="110" class="opinionVisualization">
+              <use
+                href="{{ url_for('static', filename='/images/svg/symbol-defs.svg') }}#eye"
+              ></use>
+            </svg>
+            <p>
+              bacznie obserwujemy każdy element naszej pracy, aby upewnić się,
+              że nic nie zostało pominięte
+            </p>
+          </div>
+          <div class="opinion">
+            <h2 class="opinionTitle">Niezawodni</h2>
+            <svg width="90" height="90" fill="white">
+              <use
+                href="{{ url_for('static', filename='/images/svg/symbol-defs.svg') }}#lock"
+              ></use>
+            </svg>
+            <p>
+              Możesz na nas liczyć, że Twój projekt zostanie wykonany z należytą
+              starannością
+            </p>
+          </div>
+          <div class="opinion">
+            <h2 class="opinionTitle">Pionierscy</h2>
+            <svg width="90" height="90" fill="white">
+              <use
+                href="{{ url_for('static', filename='/images/svg/symbol-defs.svg') }}#cloud"
+              ></use>
+            </svg>
+            <p>
+              Pozostajemy w czołówce branży, aby mieć pewność, że zawsze
+              współpracujesz z najlepszymi
+            </p>
+          </div>
+          <div class="opinion">
+            <h2 class="opinionTitle">Poświęceni</h2>
+            <svg width="110" height="110" fill="white">
+              <use
+                href="{{ url_for('static', filename='/images/svg/symbol-defs.svg') }}#people"
+              ></use>
+            </svg>
+            <p>
+              Kochanie tego, co robisz, jest pierwszym krokiem do zapewniania
+              wysokiej jakości pracy - i my to robimy
+            </p>
+          </div>
+          <div class="opinion">
+            <h2 class="opinionTitle">Globalni</h2>
+            <svg width="90" height="90" fill="white">
+              <use
+                href="{{ url_for('static', filename='/images/svg/symbol-defs.svg') }}#planet"
+              ></use>
+            </svg>
+            <p>
+              Fakt, że nasza praca rozprzestrzenia się na regiony całej Polski,
+              jest prawdziwym wyznacznikiem naszej jakości
+            </p>
+          </div>
+          <div class="opinion">
+            <h2 class="opinionTitle">Personalni</h2>
+            <svg width="110" height="110" fill="white">
+              <use
+                href="{{ url_for('static', filename='/images/svg/symbol-defs.svg') }}#hands"
+              ></use>
+            </svg>
+            <p>
+              Jesteśmy dumni z tego, że jesteśmy ludźmi dla ludzi i zawsze
+              pracujemy nad zapewnieniem komfortu
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <div></div>
       </section>
     </main>
     <section class="hidden loginOverlay">
