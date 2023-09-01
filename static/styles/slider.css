@@ -55,7 +55,7 @@
 
 .arrow-left,
 .arrow-right {
-  background-color: rgba(117, 117, 117, 0.425);
+  background-color: rgba(117, 117, 117, 0.625);
   position: absolute;
   top: calc(50% - 40px);
   z-index: 5;
@@ -174,11 +174,24 @@
   justify-content: center;
   align-items: center;
   transition: 0.4s;
+  animation: appear 0.5s;
+}
+
+.submitService {
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 19px;
+  border: unset;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
 }
 
 .serviceForm {
+  padding-top: 20px;
   width: 500px;
-  height: 500px;
+  height: 540px;
   background-color: #cacaca;
   border-radius: 25px;
   display: flex;
@@ -188,7 +201,7 @@
   position: relative;
 }
 
-.serviceForm input {
+.changableInput {
   padding: 5px;
   border-radius: 10px;
   font-size: 19px;

@@ -53,11 +53,11 @@ logoutBtn.addEventListener("click", () => {
 })
 
 document.addEventListener("DOMContentLoaded", () => {
-    if(localStorage.getItem("login")) {
+    if (localStorage.getItem("login")) {
         username.textContent = JSON.parse(localStorage.getItem("login")).username;
-        if(username.offsetWidth > 150) {
+        if (username.offsetWidth > 150) {
             let offset = username.offsetWidth - 150;
-            let Multiplier = (offset/9) +1;
+            let Multiplier = (offset / 9) + 1;
 
             let string = username.textContent
             string = string.slice(0, -Multiplier);
@@ -73,7 +73,7 @@ slideBtnRight.addEventListener("click", () => {
     setTimeout(() => {
         slideBtnRight.removeAttribute("disabled");
     }, 700)
-    
+
 })
 
 slideBtnLeft.addEventListener("click", () => {

@@ -66,7 +66,12 @@ export function TelOrMail(btns, input ) {
 
 export function toggleServiceForm( exitBtn, form, displayBtns ) {
     exitBtn.addEventListener("click", () => {
-        form.classList.add("hidden");
+        form.style.animation = "disappear 0.5s"
+        setTimeout(() => {
+            form.classList.add("hidden");
+            form.style.animation = ""
+        }, 500)
+
     })
 
     displayBtns.forEach(btn => {
