@@ -64,19 +64,23 @@ export function TelOrMail(btns, input ) {
     });
 }
 
-export function toggleServiceForm( exitBtn, form, displayBtns ) {
+export function toggleServiceForm( exitBtn, form, displayBtns, otherForms ) {
     exitBtn.addEventListener("click", () => {
         form.style.animation = "disappear 0.5s"
         setTimeout(() => {
             form.classList.add("hidden");
             form.style.animation = ""
+            otherForms.style.pointerEvents = "auto";
         }, 500)
 
     })
 
+    
+    
     displayBtns.forEach(btn => {
         btn.addEventListener("click", () => {
             form.classList.remove("hidden");
+            otherForms.style.pointerEvents = "none";
         })
     });
 

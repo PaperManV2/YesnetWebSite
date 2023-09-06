@@ -26,9 +26,11 @@ const userMenu = document.querySelector(".userMenu");
 const logoutBtn = document.querySelector(".logout");
 const serviceContact = document.querySelector(".changableInput");
 const serviceFormExit = document.querySelector(".serviceFormExit");
-const serviceForm = document.querySelector(".serviceOverlay");
+const serviceFormOverlay = document.querySelector(".serviceOverlay");
+const serviceForm = document.querySelector(".serviceForm");
+const serviceFormSubmit = document.querySelector(".submitService")
 
-const objects = [body, menu, bigSquare, littleSquares, mainOverlay, loginFormContainer];
+const objects = [body, menu, bigSquare, littleSquares, mainOverlay, loginFormContainer, serviceForm];
 const sliderImages = document.querySelectorAll(".posters");
 const EmailTelBtns = document.querySelectorAll(".EmailTelBtn");
 const serviceFormDisplay = document.querySelectorAll(".formToggle")
@@ -39,7 +41,7 @@ darkModeSwitch.addEventListener("click", () => {
 
 TelOrMail(EmailTelBtns, serviceContact);
 
-toggleServiceForm(serviceFormExit, serviceForm, serviceFormDisplay)
+toggleServiceForm(serviceFormExit, serviceFormOverlay, serviceFormDisplay, loginModalToogle)
 
 loginBtn(loginModalToogle, loginModal, userMenu);
 
@@ -84,3 +86,9 @@ slideBtnLeft.addEventListener("click", () => {
     }, 500)
 })
 
+serviceFormSubmit.addEventListener("click", (e) => {
+    e.preventDefault() 
+
+    loginModalToogle.style.pointerEvents = "auto";
+
+})
