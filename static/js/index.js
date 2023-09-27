@@ -71,18 +71,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 slideBtnRight.addEventListener("click", () => {
     slideToLeft(sliderImages);
+    slideBtnLeft.setAttribute("disabled", "");
     slideBtnRight.setAttribute("disabled", "");
     setTimeout(() => {
+        slideBtnLeft.removeAttribute("disabled");
         slideBtnRight.removeAttribute("disabled");
-    }, 700)
+    }, 500)
 
 })
 
 slideBtnLeft.addEventListener("click", () => {
     slideToRight(sliderImages);
     slideBtnLeft.setAttribute("disabled", "");
+    slideBtnRight.setAttribute("disabled", "");
     setTimeout(() => {
         slideBtnLeft.removeAttribute("disabled");
+        slideBtnRight.removeAttribute("disabled");
     }, 500)
 })
 
